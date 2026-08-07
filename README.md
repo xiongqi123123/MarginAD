@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/motivation_lightly.png" width="95%" alt="MarginAD motivation">
+  <img src="docs/motivation_lightly.png" width="95%" alt="MarginAD motivation" style="display: block; margin: 0 auto;">
 </p>
 
 <h1 align="center">MarginAD</h1>
@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/overview_horizon.png" width="95%" alt="MarginAD overview">
+  <img src="docs/overview_horizon.png" width="95%" alt="MarginAD overview" style="display: block; margin: 0 auto;">
 </p>
 
 MarginAD is an end-to-end autonomous driving planning framework built on the MomAD/SparseDrive-style camera-only pipeline. It refines the planning head with:
