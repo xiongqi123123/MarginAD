@@ -1,24 +1,36 @@
-<p align="center">
-  <img src="docs/motivation_lightly.png" width="95%" alt="MarginAD motivation" style="display: block; margin: 0 auto;">
-</p>
-
 <h1 align="center">MarginAD</h1>
 
 <p align="center">
-  Official implementation of <strong>MarginAD</strong> for the paper:
+  Official implementation of <strong>Mind the Margin: Safety- and Physical-Aware Planning for End-to-End Autonomous Driving</strong>
 </p>
 
 <p align="center">
-  <strong>Mind the Margin: Safety- and Physical-Aware Planning for End-to-End Autonomous Driving</strong><br>
   Qi Xiong, Jinlai Zhang, Chuan Hu, Hao Chen, and Lin Hu<br>
   IEEE Robotics and Automation Letters, accepted in August 2026
+</p>
+
+<p align="center">
+  <img alt="Paper" src="https://img.shields.io/badge/Paper-IEEE%20RA--L%202026-4b5563">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10-3776ab">
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-2.7-ee4c2c">
+  <img alt="Dataset" src="https://img.shields.io/badge/Dataset-nuScenes%20%7C%20Shift--nuScenes-0f766e">
+  <a href="#released-artifacts"><img alt="Artifacts" src="https://img.shields.io/badge/Artifacts-Checkpoints%20%2B%20PKL-16a34a"></a>
+</p>
+
+<p align="center">
+  <a href="#released-artifacts">Artifacts</a> |
+  <a href="#installation">Installation</a> |
+  <a href="#data-preparation">Data</a> |
+  <a href="#training">Training</a> |
+  <a href="#evaluation">Evaluation</a> |
+  <a href="#visualization">Visualization</a>
 </p>
 
 <p align="center">
   <img src="docs/overview_horizon.png" width="95%" alt="MarginAD overview" style="display: block; margin: 0 auto;">
 </p>
 
-MarginAD is an end-to-end autonomous driving planning framework built on the MomAD/SparseDrive-style camera-only pipeline. It refines the planning head with:
+MarginAD is a camera-only end-to-end autonomous driving planning framework built on the MomAD/SparseDrive-style pipeline. It improves planning robustness with:
 
 - physics-aware kinematic guidance for more feasible ego trajectories;
 - safety-margin-aware collision loss for safer clearance around surrounding agents;
@@ -26,15 +38,22 @@ MarginAD is an end-to-end autonomous driving planning framework built on the Mom
 
 On nuScenes, MarginAD improves the MomAD baseline from **0.60 m to 0.55 m** Avg. L2, **0.09% to 0.08%** Avg. collision rate, and **0.54 m to 0.47 m** Avg. TPC. On the more challenging Shift-nuScenes subset, it reduces Avg. L2 from **1.54 m to 0.75 m** and Avg. collision rate from **0.38% to 0.19%**.
 
+<p align="center">
+  <img src="docs/motivation_lightly.png" width="95%" alt="MarginAD motivation" style="display: block; margin: 0 auto;">
+</p>
+
 ## News
 
+- `2026-08`: Released pretrained checkpoints and Shift-nuScenes pkl files.
 - `2026-08`: MarginAD was accepted by IEEE Robotics and Automation Letters.
 
-## TODO
+## Released Artifacts
 
-- [ ] Release pretrained checkpoints.
-- [ ] Release Shift-nuScenes split tokens and mining script.
-- [ ] Add detailed reproduction logs.
+Pretrained checkpoints and Shift-nuScenes pkl files are available from the following mirrors:
+
+| Artifact | Download | Extraction code |
+| --- | --- | --- |
+| MarginAD | [Baidu Netdisk](https://pan.baidu.com/s/1qOHWC_qYGfpJZtLhyBjhtw?pwd=ukg8) / [Google Drive](https://drive.google.com/drive/folders/1jswj6mRMKmSBT0XFaebFJkUs-wDP82N0?usp=sharing) | `ukg8` / - |
 
 ## Installation
 
