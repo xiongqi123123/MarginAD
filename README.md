@@ -23,7 +23,8 @@
   <a href="#data-preparation">Data</a> |
   <a href="#training">Training</a> |
   <a href="#evaluation">Evaluation</a> |
-  <a href="#visualization">Visualization</a>
+  <a href="#visualization">Visualization</a> |
+  <a href="#citation">Citation</a>
 </p>
 
 <p align="center">
@@ -194,6 +195,20 @@ By default, this reads `work_dirs/Margin_Stage2_Full/results.pkl` and writes vis
 - `tools/data_converter/`: nuScenes metadata conversion.
 - `tools/kmeans/`: anchor generation scripts.
 - `tools/visualization/`: visualization utilities.
+
+## Citation
+
+If you find MarginAD useful in your research, please cite our paper:
+
+```bibtex
+@article{xiong2026mind,
+  title={Mind the Margin: Safety-and Physical-Aware Planning for End-to-End Autonomous Driving},
+  author={Xiong, Qi and Zhang, Jinlai and Hu, Chuan and Chen, Hao and Hu, Lin},
+  journal={IEEE Robotics and Automation Letters},
+  year={2026},
+  publisher={IEEE}
+}
+```
 
 ## Acknowledgement
 
